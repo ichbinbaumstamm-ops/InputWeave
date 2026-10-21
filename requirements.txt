@@ -1,0 +1,2 @@
+pygame==2.6.1
+vgamepad @ git+https://github.com/yannbouteiller/vgamepad.git@3f910aa8bbde49a576683db74ad5e4a0879f8a80

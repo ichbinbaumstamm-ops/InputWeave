@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inputweave"
+version = "1.0.0"
+description = "Configurable USB and Bluetooth gamepad mapping and virtual controller bridge for Windows"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pygame==2.6.1",
+  "vgamepad @ git+https://github.com/yannbouteiller/vgamepad.git@3f910aa8bbde49a576683db74ad5e4a0879f8a80",
+]
+
+[project.scripts]
+inputweave = "inputweave.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
